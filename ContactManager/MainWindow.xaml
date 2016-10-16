@@ -1,0 +1,65 @@
+﻿<Window x:Class="ContactManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContactManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="662" Width="724">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="268*"/>
+            <RowDefinition Height="26*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="ContactsDataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3"
+                  Grid.Column="0" Height="354" Width="236"
+                  Grid.Row="0" Grid.RowSpan="2"/>
+
+        <Button x:Name="AddButton" Content="Add" Grid.Row="2" Grid.Column="0" BorderThickness="0" Click="AddButton_Click" />
+        <Button x:Name="DeleteButton" Content="Delete" Grid.Column="1" Grid.Row="2" BorderThickness="0"/>
+        <Button x:Name="EditButton" Content="Edit" Grid.Column="2"  Grid.Row="2" BorderThickness="0"/>
+
+        <TextBlock x:Name="DetailsTextBlock" Grid.Row="0" Grid.Column="4" Text="Details" />
+        <Image x:Name="PersonImage" HorizontalAlignment="Left" Height="155" VerticalAlignment="Top" Width="112" Grid.Column="4" Margin="350,10,0,0" Grid.Row="1"/>
+
+        <TextBlock x:Name="NameDetailsTextBlock" Text="NameDetails" Grid.Column="4" Margin="94,10,137,505" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="NameTextBlock" Text="Name:" Grid.Column="4" Margin="10,25,383,477" Grid.Row="1"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" Grid.Column="4" Margin="94,30,0,0" Grid.Row="1"/>
+        <TextBlock x:Name="MiddleNameTextBlock" Text="Middle Name:" Grid.Column="4" Margin="10,58,373,459" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="MiddleNameTextBox" Grid.Column="4" Margin="94,58,137,455" Grid.Row="1" ></TextBox>
+        <TextBlock x:Name="LastNameTextBlock" Text="Last Name:" Grid.Column="4" Margin="10,90,376,420" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="LastNameTextBok" Grid.Column="4" Margin="94,90,137,420" Grid.Row="1"></TextBox>
+
+        <TextBlock x:Name="AdressTextBlock" Text="AdressDetails" Grid.Column="4" Margin="99,145,127,365" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="StreetTextBlock" Text="Street:" Grid.Column="4" Margin="10,170,383,340" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="StreetTextBox" Grid.Column="4" Margin="94,170,132,340" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="CityTextBlock" Text="City:" Grid.Column="4" Margin="10,195,383,315" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="CityTextBox" Grid.Column="4" Margin="94,195,306,315" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="StateTextBlock" Text="State:" Grid.Column="4" Margin="10,220,383,287" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="StateTextBox" Grid.Column="4" Margin="94,220,286,290" Grid.Row="1"></TextBox>
+        <TextBox x:Name="ZipCodeTextBlock" Text="Zip Code:" Grid.Column="4" Margin="206,219,211,291" Grid.Row="1"></TextBox>
+        <TextBox x:Name="ZipCodeTextBox" Grid.Column="4" Margin="286,220,111,290" Grid.Row="1" RenderTransformOrigin="0.747,0.5"></TextBox>
+
+        <TextBlock x:Name="ContactTextBlock" Text="ContactDetails" Grid.Column="4" Margin="94,269,176,240" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="HomePhoneTextBlock" Text="Home Phone:" Grid.Column="4" Margin="10,295,383,210" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="HomePhoneTextBox" Grid.Column="4" Margin="94,295,176,210" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="WorkPhoneTextBlock" Text="Work Phone:" Grid.Column="4" Margin="10,335,383,175" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="WorkPhoneTextBox" Grid.Column="4" Margin="94,325,176,175" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="CellPhoneTextBlock" Text="Cell Phone:" Grid.Column="4" Margin="10,360,383,145" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="CellPhoneTextBox" Grid.Column="4" Margin="94,360,176,145" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="FaxTextBlock" Text="Fax:" Grid.Column="4" Margin="15,395,378,115" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="FaxTextBox" Grid.Column="4" Margin="94,390,176,115" Grid.Row="1"></TextBox>
+        <TextBlock x:Name="EmailTextBlock" Text="Email" Grid.Column="4" Margin="10,422,383,85" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="EmailTextBox" Grid.Column="4" Margin="94,420,176,85" Grid.Row="1"></TextBox>
+    </Grid>
+</Window>
